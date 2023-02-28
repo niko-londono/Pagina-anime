@@ -1,0 +1,526 @@
+*
+{
+    font-family: 'Montserrat';
+    margin: 0%;
+}
+body
+{
+  overflow-x: hidden;
+  background-color: #a3a2a3;
+}
+a
+{
+    text-decoration: none;
+}
+span
+{
+  color: #ff7d12;
+}
+h1
+{
+    color: aliceblue;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+
+.cabezera
+{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(73, 72, 72);
+}
+.contenido-top
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 93vh;
+    overflow: hidden;
+}
+.titulo-top
+{
+    position: relative;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 60px;
+    width: 50%;
+}
+.naruto
+{
+    position: relative;
+    width: 50%;
+    height: 65vh;
+    top: 33%;
+    left: 20%;
+}
+
+.busqueda
+{
+    width: 100%;
+    height: 110vh;
+    background-color: rgb(109, 106, 106);
+}
+
+/* nav-bar */
+.menu-bar {
+    background-color: #232425;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  
+  .item {
+    color: white;
+    background-color: transparent;
+    font-size: 18px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 14px 20px;
+    cursor: pointer;
+  }
+  
+  .item.title {
+    font-weight: 600;
+  }
+  
+  .item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #ff7d12;
+}
+
+/* footer */
+footer
+{   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #a3a2a3;
+    width: 94vw;
+    height: 42vh;
+    padding: 0 3%;
+}
+footer p
+{
+    font-size: 20px;
+    text-align: center;
+    color: #5a5656;
+}
+.PITitulo
+{
+  text-align: center;
+  padding-bottom: 10px;
+}
+.pie-izquierda
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pie-centro
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pie-derecha
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* social */
+.card-social svg {
+  height: 25px;
+}
+
+.card-social {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e7e7e7;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+  height: 50px;
+  width: 200px;
+}
+
+.card-social::before, .card-social::after {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  transition: 0.25s linear;
+  z-index: 1;
+}
+
+.card-social::before {
+  content: "";
+  left: 0;
+  justify-content: flex-end;
+  background-color: #f48a1c;
+}
+
+.card-social::after {
+  content: "";
+  right: 0;
+  justify-content: flex-start;
+  background-color: #a75e13;
+}
+
+.card-social:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-social:hover span {
+  opacity: 0;
+  z-index: -3;
+}
+
+.card-social:hover::before {
+  opacity: 0.5;
+  transform: translateY(-100%);
+}
+
+.card-social:hover::after {
+  opacity: 0.5;
+  transform: translateY(100%);
+}
+
+.card-social span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: whitesmoke;
+  font-family: 'Fira Mono', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+}
+
+.card-social .social-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 100%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.card-social .social-link svg {
+  text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
+  transform: scale(1);
+}
+
+.card-social .social-link:hover {
+  background-color: rgba(249, 244, 255, 0.774);
+  animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.contenedor-titulo-top
+{
+  font-family: 'Montserrat';
+  position: absolute;
+  background-color: #4f5053;
+  border-radius: 30px;
+  margin: 0 auto;
+  height: 90px;
+  width: 550px;
+  text-align: center;
+  box-shadow: rgb(0 0 0 / 50%) 1.95px 1.95px 2.6px;
+  left: 5%;
+  top: 93vh;
+}
+
+.contenedor-titulo-top h1
+{
+    padding-top: 20px;
+    color: #f09c57;
+    font-size: 35px;
+}
+
+.categorias-anime
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(119, 114, 114);
+}
+.naruto-logo
+{
+    position: absolute;
+    top: 46%;
+    left: 9vw;
+
+}
+
+/* cards - categorias anime */
+.cards {
+    position: relative;
+    left: 75vw;
+    top: 20vh;
+  }
+  
+  .card {
+    z-index: 1;
+    position: absolute;
+    width: 254px;
+    height: 190px;
+    border-radius: 10px;
+    transition: all .5s ease-out;
+    overflow: hidden;
+    transform: translateX(0px) translateY(0px) perspective(905px) rotateX(0deg) rotateY(0deg) rotateZ(-8deg);
+  }
+  
+  .card.one {
+    top: -120px;
+    left: -150px;
+    background: linear-gradient(180deg, #f48a1c 0%, #322632 100%);
+  }
+  
+  .card.two {
+    top: -95px;
+    left: -125px;
+    background: linear-gradient(180deg, #434349 0%, #757575 99%);
+  }
+  
+  .card.three {
+    top: -70px;
+    left: -100px;
+    background: linear-gradient(180deg, #e9e800 0%, #533c38 100%);
+  }
+  
+  .card:hover {
+    z-index: 4;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) !important;
+    transition: all .5s ease-out;
+  }
+  
+  .cardDetails {
+    width: 55%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: rgba(0,0,0,0.8);
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+  }
+  
+  .card:hover .cardDetails {
+    transform: perspective(2000px) rotateY(0deg);
+  }
+  
+  .cardDetailsHaeder {
+    font-weight: 600;
+    color: #edb899;
+  }
+  
+  .cardDetailsButton {
+    padding: 5px 6px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    background-color: #edb899;
+    color: #000;
+    font-weight: 600;
+  }
+  .cardDetailsButton:hover
+  {
+    cursor: pointer;
+  }
+
+  /* buscar */
+  .container {
+    position: relative;
+    --size-button: 40px;
+    margin-left: 2%;
+    margin-right: 80%;
+    margin-top: 2%;
+  }
+  
+  .input {
+    padding-left: var(--size-button);
+    height: var(--size-button);
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    outline: none;
+    width: var(--size-button);
+    transition: all ease 0.3s;
+    background-color: #191A1E;
+    box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .input:focus,
+  .input:not(:invalid) {
+    width: 200px;
+    cursor: text;
+    box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
+  }
+  
+  .input:focus + .icon,
+  .input:not(:invalid) + .icon {
+    pointer-events: all;
+    cursor: pointer;
+  }
+  
+  .container .icon {
+    position: absolute;
+    width: var(--size-button);
+    height: var(--size-button);
+    top: 0;
+    left: 0;
+    padding: 3px;
+    pointer-events: none;
+    color: #666060;
+  }
+  
+  .container .icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+
+/* search container (Busqueda)*/
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 2%;
+  margin-right: 70%;
+  margin-top: 1%;
+  background-color: #5a5656;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#search-list {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  margin-top: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#search-list a {
+  display: block;
+  padding: 10px;
+  color: #ebe3e3;
+  border-radius: 5px;
+}
+#search-list a:hover
+{
+  background-color: #706a6a;
+}
+ul
+{
+  padding-left: 0;
+}
+
+.animePopular
+{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 40vw;
+  top: 145vh;
+  width: 50vw;
+  height: 55vh;
+}
+
+.animePopular h1
+{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.Populares
+{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  max-width: 800px;
+  padding-bottom: 10px;
+}
+
+.Populares::-webkit-scrollbar
+{
+  border-radius: 5px;
+}
+.Populares::-webkit-scrollbar-thumb
+{
+  background: #f4841d;
+  border-radius: 5px;
+}
+
+.AP-cartas
+{
+  width: 30%;
+  border-radius: 15px;
+  transition: .3s;
+  margin: 0 2px;
+  scroll-snap-align: center;
+}
+.AP-cartas:hover
+{
+  filter: drop-shadow(-10px 20px 20px rgba(0,0,0,0.2));
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.fuego
+{
+  color: #f09c57;
+}
+.fuego:hover
+{
+  color: #ff7d12;
+}
