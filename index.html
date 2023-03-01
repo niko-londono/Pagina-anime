@@ -28,6 +28,7 @@
                 <div class="group">
                 <a href="#buscar" class="item">Buscar</a>
                 <a href="html/animes.html" class="item">Animes</a>
+                <a href="#calculadora" class="item">Calcular</a>
                 </div>
             </nav>
             <div class="contenido-top">
@@ -46,19 +47,19 @@
                     <div class="card one">
                       <div class="cardDetails">
                         <div class="cardDetailsHaeder">SHONEN <br><p>historias incluyen acción, aventura, peleas, deportes y amistad.</p></div>
-                        <a href="html/shonen.html"><button class="cardDetailsButton">Click me</button></a>                  
+                        <a href="html/animes.html"><button class="cardDetailsButton">Click me</button></a>                  
                       </div>
                     </div>
                     <div class="card two">
                       <div class="cardDetails">
                         <div class="cardDetailsHaeder">ISEKAI <br><p>historia en la que un personaje principal es transportado a otro mundo.</p></div>
-                        <a href="html/isekai.html"><button class="cardDetailsButton">Click me</button></a> 
+                        <a href="html/animes.html"><button class="cardDetailsButton">Click me</button></a> 
                       </div>
                     </div>
                     <div class="card three">
                       <div class="cardDetails">
                         <div class="cardDetailsHaeder">SPOKON <br><p> anime y manga que se centra en deportes y competiciones.</p></div>
-                        <a href="html/spokon.html"><button class="cardDetailsButton">Click me</button></a> 
+                        <a href="html/animes.html"><button class="cardDetailsButton">Click me</button></a> 
                       </div>
                     </div>
                   </div>
@@ -101,6 +102,26 @@
                 <img src="imagenes/haikyuu.jpg" class="AP-cartas">
               </div>
             </div>
+        </section>
+
+        <section id="calculadora">
+          <h1 class="calculadora-titulo">Calcula tus horas vistas</h1>
+
+          <div class="calcular-contenedor">
+            <div class="calcular-horas">
+              <div class="calculator">
+                <input type="text" id="nombre" placeholder="Nombre del anime">
+                <input type="number" id="cantidadEP" placeholder="Episodios vistos">
+                <div class="botones-calcular">
+                  <button class="boton-fun" onclick="multiplicar()">Multiplicar</button>
+                  <button class="boton-fun" onclick="resetear()">Resetear</button>
+                </div>
+                <input type="text" id="resultado" placeholder="Minutos vistos" readonly>
+                <input type="text" id="minAnime" placeholder="Duracion del anime" readonly>
+              </div>
+              
+            </div>
+          </div>
         </section>
 
         <footer>
